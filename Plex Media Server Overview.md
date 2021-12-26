@@ -1,5 +1,5 @@
 # Plex Media Server Overview
-> *By TitaniumCoder477, 12/26/2021, mrd0sgpe9@mozmail.com*
+> *By TitaniumCoder477, mrd0sgpe9@mozmail.com*
 
 Sometimes it's great to try something before you put the time (and money) into it! With Linux and Plex and an old computer, you can accomplish this!
 
