@@ -78,3 +78,5 @@ I am a big refurbished guy, as in I really like refurb hardware when done right.
 ## Conclusion
 
 Hopefully the video overview and these details will get you on the right path to setting up your own Plex Media Server! It's a great project and not too difficult to setup. Enjoy!
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
