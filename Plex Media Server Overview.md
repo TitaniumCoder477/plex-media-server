@@ -4,13 +4,16 @@
 Sometimes it's great to try something before you put the time (and money) into it! With Linux and Plex and an old computer, you can accomplish this!
 
 ## Try out Linux and Plex with an old computer:
-For this, you'll need and old computer with at least 2 cores, 6GB RAM, and 30GB hard drive space. You can use a laptop or a desktop.
+
+For this, you'll need an old computer with at least 2 cores, 6GB RAM, and 30GB hard drive space. You can use a laptop or a desktop.
+
 1. You would install Ubuntu Desktop 21.04 on your old computer: https://ubuntu.com/download/desktop
 2. You would install Plex Media Server: https://snapcraft.io/plexmediaserver
 3. You would setup an DHCP reservation on your router for the computer so that the IP doesn't change or get reused by another device. If you are not sure how to do this, you can google your router's make & model plus "DHCP reservation" keywords and usually find the info you need.
 
 At this point, you could easily test Plex on your local network, i.e. from another computer connected to the same hardwire or wireless at your home. However, if you also want to test the apps and streaming from a remote location, then you'll need to follow this step as well:
-1. You would also configure a port forward rule on router to this new IP, which will facilitate use of the apps from any location and from playing from any location via your https://plex.tv web account. This shows how to do that: https://portforward.com/plex/. And this database may have your router make & model and provide specific steps for it: https://portforward.com/router.htmYou would add a local library path and put a move or two on it (whatever you have space for)
+
+4. You would also configure a port forward rule on router to this new IP, which will facilitate use of the apps from any location and from playing from any location via your https://plex.tv web account. This shows how to do that: https://portforward.com/plex/. And this database may have your router make & model and provide specific steps for it: https://portforward.com/router.htmYou would add a local library path and put a move or two on it (whatever you have space for)
 
 You should keep in mind that Plex might run slower than desired on an old computer. The point of this section is to test the interface and how it works etc. so you can then decide if it's worth setting up a better system.
 
@@ -27,6 +30,7 @@ If all you're using Plex for is the TV, movies, podcasts, et.c then you may not 
 *Again, NEVER store your important data on just a single hard drive UNLESS you are also backing that data up to another drive or location!*
 
 ### Synology NAS
+
 This is my brand of choice simply because of the quality of hardware and operating system. You buy the unit, and you get a limited 1 or 2 year hardware warranty and lifetime software support. There is no monthly cost (i.e. no subscription fee or anything). There are quite a few "apps" that you can use on the Synology NAS with varying degrees of usefulness and quality. I recommend the product based on none of these, only on the hardware and operating system quality.
 
 - The benefit of storing your videos and pictures on this device is that it uses RAID technology to ensure that if one or more hard drives fail, you don't lose all the data.
@@ -34,11 +38,15 @@ This is my brand of choice simply because of the quality of hardware and operati
 - Towards the bottom you'll find the Value and J Series, both of which are inexpensive options for home use.
 - I have the DS220j which is the cheapest NAS that has two bays. It serves my purposes fine. I would recommend a 2-bay or 4-bay such as that model, DS218 or DS418.
 - (If you started out with an inexpensive 2-bay model and really liked it but eventually wanted to upgrade, you could migrate your data to a 4-bay model and then give the 2-bay to one of your kids)
-- With a Synology NAS, you can optionally sync your data to the Backblaze B2 cloud storage for an inexpensive offsite copy (approx $5 per TB of cloud storage). Backblaze is a publicly traded US company which means they are 100% subject to SEC regulations concerning privacy and security.
+- With a Synology NAS, you can optionally sync your data to the Backblaze B2 cloud storage for an inexpensive offsite copy (approx $5 per TB of cloud storage). Backblaze is a publicly traded US company which means they are 100% subject to SEC regulations concerning privacy and security. Here's a good guide for that: https://www.backblaze.com/blog/synology-cloud-backup-guide/
 - Once you settle on a model, you can purchase it directly from Amazon.com.
 
 ### Hard drives for the NAS
+
 The NAS unit doesn't come with any drives, so that the new owner can "build out the space" according to need and desire. Virtually any 3.5" SATA drives will work, but you always want to have the same model and size drives (usually a requirement for RAID).
+
+*Some sellers on Amazon will bundle drives with the NAS, but I recommend purchasing the drives separately to get more "bang for your buck" and to ensure you have drive warranties.
+
 - Keep in mind that drives are pretty expensive, so if you get a 4-bay NAS, you'll end up with more drive cost!
 - If you want new drives, I recommend Western Digital Red or Red Pro. Some "Red" modules have the acronym "SMR." Avoid these. It's a long story, but they are not good NAS drives. Only get WD drives that have the "CMR" acronym.
 - New drives will have warranties, either 3 or 5 years, but they are more expensive than refurbished drives.
@@ -48,14 +56,18 @@ The NAS unit doesn't come with any drives, so that the new owner can "build out 
 *Technically, you can run Plex Media Server on a NAS, but it can be very convoluted and difficult to setup and update. I recommend the NAS remain just the "storage location" of your data, and that you have a separate device that operates as the Plex Media Server.*
 
 ### Plex Media Server
+
 #### Option 1: You could continue using your old computer, as long as it's performing fine for you
-1. I would need to help you or provide you with guidance on how to map the Synology NAS file system to your Plex Media Server so that it "sees" the content as local.The Plex Media Server would then continue offering this content to any clients, just like your test did.
+
+1. You would need to map the Synology NAS file system to your Plex Media Server so that it "sees" the content as local. The Plex Media Server would then continue offering this content to any clients, just like your test did. Here's a good tutorial on how to do this: https://linuxhint.com/nfs-mount-synology-linux/
 2. The actual content would remain on the NAS, which would protect it with RAID and (optionally) sync it offsite as a backup.
 3. If your old computer died, you could easily setup a new Plex Media Server and just point it to your NAS once again.
 
 #### Option 2: Raspberry Pi media server (+- $170)
+
 **PRO:** Cheaper
 **CON:** Less "power" so may not handle multiple people watching different things at the same time
+
 1. You would purchase a Raspberry Pi 4 kit on Amazon.com (one with 8GB RAM). For example: https://www.amazon.com/dp/B08B6F1FV5/ref=twister_B08B6F6N34?_encoding=UTF8&psc=1
 2. You would install Ubuntu Desktop 21.04: https://ubuntu.com/download/raspberry-pi
 3. You would install Plex Media Server: https://snapcraft.io/plexmediaserver
@@ -64,6 +76,7 @@ The NAS unit doesn't come with any drives, so that the new owner can "build out 
 6. You would map the NAS to your media server
 
 #### Option 3: Dell OptiPlex micro media server (+- $300)
+
 **PRO:** Much more powerful
 **CON:** More expensive
 
